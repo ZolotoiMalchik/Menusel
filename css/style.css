@@ -1,0 +1,67 @@
+.left-container {
+  float: left;
+  width: 20%;
+}
+.right-container {
+ float: left;
+ width: 75%;
+ padding-left: 10px;
+}
+.result {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  
+}
+.result .textCnt {
+  display: inline-block;
+  width: 100%;
+  height: 130px;
+  border: 1px solid lightgreen;
+  border-radius: 20px;
+  padding: 10px;
+  white-space: pre-line;
+  overflow: auto;
+}
+.menu {
+  height: auto;
+  width: auto;
+  display: inline-block;
+}
+.menu .title {
+  width: 70px;
+  display: inline-block;
+  font-size: 19px;
+  background-color: lightgrey;
+  padding: 0 10px;
+}
+.list {
+  margin: 0;
+  list-style: none;
+  width: 90px;
+  display: block;
+  padding: 0;
+}
+.list li {
+  padding: 10px;
+  background-color: lightblue;
+  width: 70px;
+  display: block;
+  position: relative;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.list li:hover {
+  background-color: lightgreen;
+}
+.sub-list {
+  position: absolute;
+  z-index: 1000;
+}
+.sub-list li {
+  background-color: #ffffff;
+  border: 1px solid #add8e6;
+}
+.hide {
+  display: none;
+}

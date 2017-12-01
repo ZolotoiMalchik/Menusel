@@ -1,0 +1,89 @@
+
+.carusel {
+  position: relative;
+  width: 400px;
+  padding: 10px 10px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  border-radius: 20px;
+}
+.carusel .item {
+  /*display: inline-block;*/
+}
+
+.arrow {
+  position: absolute;
+  padding: 0;
+  top: 60px;
+  background: #ddd;
+  border-radius: 15px;
+  border: 1px solid gray;
+  font-size: 24px;
+  line-height: 24px;
+  color: #444;
+  display: block;
+}
+.arrow:focus {
+  outline: none;
+}
+.arrow:hover {
+  background: lightblue;
+  cursor: pointer;
+}
+.btn-left {
+  /*position: relative;*/
+  /*top: -50px;*/
+  left: 5px;
+}
+.btn-right {
+  /*position: relative;*/
+  /*top: -50px;*/
+  right: 5px;
+}
+.ul-wrapper {
+  position: relative;
+  left:30px;
+  width: 339px;
+  overflow: hidden;
+  border: 1px solid #fff;
+}
+.card-list {
+  height: 130px;
+  width: 0px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+}
+.card-list li {
+  float: left;
+  height: 100%;
+}
+.card-list .li-inner {
+  position: relative;
+  background: #fff;
+  height: 100%;
+  width: 113px;
+  border: 1px solid lightgrey;
+}
+
+.card-list .li-inner .title {
+  font-size: 1rem;
+  width: 100%;
+  background:lightgreen;
+  margin:0;
+}
+.card-list .li-inner .content {
+  width: 100%;
+  margin:0;
+  height: 100%;
+}
+.card-list .li-inner .remove-item {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  color: red;
+  cursor: pointer;
+}
+
+  

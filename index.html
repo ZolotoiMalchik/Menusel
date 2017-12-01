@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/style.css"/>
+  <link rel="stylesheet" href="./css/carusel.css"/>
+  <script src="./components/AppComponent.js"></script>
+  <script src="./components/menu.js"></script>
+  <script src="./components/data.js"></script>
+  <script src="./components/carusel.js"></script>
+</head>
+
+<body>
+  
+  <div class="left-container">
+  </div>
+  <div class="right-container">
+    <!--<div class="result">
+      <span id="textCnt" class="textCnt"></span>
+    </div>-->
+  </div>
+  
+
+<script>
+  "use strict";
+  
+  let AppComponent = new window.AppComponent();
+  let carusel = new Carusel();
+  carusel.setParentComponent(AppComponent);
+  carusel.subscribe.call(AppComponent, carusel.insertItem.bind(carusel), "onClick");
+  carusel.render();
+  
+  let menu = new Menu({title: "Меню", data: dataList, clickTarget: carusel});
+  menu.setParentComponent(AppComponent);
+  menu.render();
+  
+  let oTextCnt = document.querySelector(".result");
+  
+  document.querySelector(".left-container").append(menu.el);
+  
+  
+  document.querySelector(".right-container").append(carusel.el);
+  /*let newItem = carusel.createItem({title: "Superman", content: "Норм чел!"});
+  carusel.addItem(newItem);*/
+  
+  
+</script>
+</body>
+
+</html>
